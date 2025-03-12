@@ -1,0 +1,219 @@
+/* Ejercicio 4: Estilo para texto en negrita */
+.destacado { 
+    font-weight: bold; 
+}
+
+/* Ejercicio 5: Centrar un div con ID contenedor */
+#contenedor { 
+    width: 50%; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+/* Ejercicio 6: Agrupar selectores h2 y h3 con la misma fuente y color */
+h2, h3 { 
+    font-family: Arial, sans-serif; 
+    color: darkred; 
+}
+
+/* Ejercicio 7: Aplicar modelo de caja */
+.caja { 
+    padding: 20px; 
+    border: 1px solid black; 
+    margin: 10px; 
+}
+
+/* Ejercicio 8: Centrar un div con margin auto */
+.centrado { 
+    width: 600px; 
+    margin: 0 auto; 
+}
+
+/* Ejercicio 9: Alinear texto a la derecha y subrayar */
+.alineado { 
+    text-align: right; 
+    text-decoration: underline; 
+}
+
+/* Ejercicio 10: Aplicar una fuente de Google Fonts al body */
+body { 
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Ejercicio 11: Fondo degradado */
+.gradiente { 
+    background: linear-gradient(to right, blue, green); 
+    height: 100px; 
+}
+
+/* Ejercicio 12: Convertir un div en un círculo */
+.redondo { 
+    width: 100px; 
+    height: 100px; 
+    background: red; 
+    border-radius: 50%; 
+}
+
+/* Ejercicio 13: Uso de display inline-block */
+.inline-block div { 
+    display: inline-block; 
+    width: 100px; 
+    height: 50px; 
+    background: gray; 
+    margin: 5px; 
+}
+
+/* Ejercicio 14: Posicionamiento relativo */
+.relativo { 
+    position: relative; 
+    top: 15px; 
+    background: lightblue; 
+}
+
+/* Ejercicio 15: Posicionamiento absoluto */
+.absoluto { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    background: yellow; 
+    padding: 5px; 
+}
+
+/* Ejercicio 16: Menú con Flexbox */
+.menu { 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    background: black; 
+    padding: 10px; 
+}
+
+.menu a { 
+    color: white; 
+    text-decoration: none; 
+}
+
+/* Ejercicio 17: Transición de color en un botón */
+.boton { 
+    background: blue; 
+    color: white; 
+    padding: 10px; 
+    transition: background 0.5s; 
+}
+
+.boton:hover { 
+    background: red; 
+}
+
+/* Ejercicio 18: Animación de movimiento */
+@keyframes mover {
+    from { 
+        transform: translateX(0); 
+    }
+    to { 
+        transform: translateX(100px); 
+    }
+}
+
+.animado { 
+    animation: mover 2s infinite alternate; 
+}
+
+/* Ejercicio 19: Ocultar un elemento en pantallas pequeñas */
+@media (max-width: 600px) {
+    .ocultar { 
+        display: none; 
+    }
+}
+
+/* Ejercicio 20: Agregar un pseudo-elemento ::before a enlaces */
+a::before { 
+    content: '🔗 '; 
+}
+
+
+/* Ejercicio 21: Definir una variable CSS */
+:root { 
+    --color-primario: purple; 
+}
+
+/* Ejercicio 21: Aplicar una variable CSS */
+.variable { 
+    color: var(--color-primario); 
+}
+
+/* Ejercicio 22: Rotación en hover */
+.rotar:hover { 
+    transform: rotate(45deg); 
+}
+
+.rotar { 
+    width: 200px; 
+    height: auto; 
+}
+
+/* Ejercicio 23: Aplicar una sombra a un div */
+.sombra { 
+    box-shadow: 5px 5px 10px gray; 
+    padding: 20px; 
+    background: white; 
+}
+
+/* Ejercicio 24: Texto en columnas */
+.columnas { 
+    column-count: 2; 
+    column-gap: 20px; 
+}
+
+/* Ejercicio 25: Aplicar un filtro a una imagen */
+.filtro { 
+    filter: grayscale(100%);
+    width: 200px;
+    height: auto; 
+}
+
+/* Ejercicio 26: Overlay sobre una imagen */
+.overlay-container {
+    position: relative; 
+    display: inline-block; 
+}
+
+.overlay-container img { 
+    display: block;
+    width: 200px;
+    height: auto;  
+}
+
+.overlay-container .overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.5); 
+    color: white; 
+    display: none; 
+}
+
+.overlay-container:hover .overlay { 
+    display: block; 
+}
+
+/* Ejercicio 27: Animación de carga (spinner) */
+@keyframes girar {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+.spinner { 
+    width: 50px; 
+    height: 50px; 
+    border: 5px solid gray; 
+    border-top-color: blue; 
+    border-radius: 50%; 
+    animation: girar 1s linear infinite; 
+}

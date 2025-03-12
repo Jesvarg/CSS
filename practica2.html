@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="recursos/portafolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- Sección 1: Cabecera Dinámica -->
+<header>
+    <h1 id="titulo">Mi Portafolio</h1>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-star star"></i><a href="#inicio">Inicio</a></li>
+            <li><i class="fas fa-star star"></i><a href="#proyectos">Proyectos</a></li>
+            <li><i class="fas fa-star star"></i><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <!-- Sección 2: Tarjetas de Proyectos -->
+    <section id="proyectos">
+        <article class="proyecto destacado">
+            <img src="recursos/night.jpg" alt="Proyecto 1">
+            <h2>Proyecto 1</h2>
+            <p>Descripción del proyecto 1.</p>
+        </article>
+        <article class="proyecto">
+            <img src="recursos/night.jpg" alt="Proyecto 2">
+            <h2>Proyecto 2</h2>
+            <p>Descripción del proyecto 2.</p>
+        </article>
+        <article class="proyecto">
+            <img src="recursos/night.jpg" alt="Proyecto 3">
+            <h2>Proyecto 3</h2>
+            <p>Descripción del proyecto 3.</p>
+        </article>
+        <article class="proyecto destacado">
+            <img src="recursos/night.jpg" alt="Proyecto 4">
+            <h2>Proyecto 4</h2>
+            <p>Descripción del proyecto 4.</p>
+        </article>
+        <article class="proyecto">
+            <img src="recursos/night.jpg" alt="Proyecto 5">
+            <h2>Proyecto 5</h2>
+            <p>Descripción del proyecto 5.</p>
+        </article>
+        <article class="proyecto">
+            <img src="recursos/night.jpg" alt="Proyecto 6">
+            <h2>Proyecto 6</h2>
+            <p>Descripción del proyecto 6.</p>
+        </article>
+    </section>
+
+    <!-- Sección 3: Formulario de Contacto Responsivo -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" class="input-verde" required>
+            <input type="email" placeholder="Correo" class="input-verde" required>
+            <textarea placeholder="Mensaje" class="input-verde" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección 4: Footer con Efectos -->
+    <footer>
+        <p>&copy; 2025 Mi Portafolio</p>
+        <div class="mensaje-secreto">Mensaje oculto</div>
+        <button class="boton-subir">Subir</button>
+    </footer>
+</body>
+</html>
