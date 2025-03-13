@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tech</title>
+    <link rel="stylesheet" href="recursos/practica3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav id="mega-menu">
+        <ul class="menu">
+            <li class="menu_item"><a href="#">Electrodomésticos</a></li> 
+            <li class="menu_item"><a href="#">Moda</a></li>
+            <li class="menu_item"><a category="nuevo" href="#">Tecnología</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero con carrusel -->
+    <section class="hero">
+        <div class="hero__slide">🔥 50% de descuento en smartphones</div>
+        <div class="hero__slide">🚀 Envío gratis en toda la tienda</div>
+        <div class="hero__slide">🎧 Descuentos en audífonos premium</div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section class="productos">
+        <div class="producto">
+            <img class="producto__imagen" src="recursos/night.jpg" alt="Producto 1">
+            <h2 class="producto__nombre">Laptop Gamer</h2>
+            <p class="producto__precio precio--oferta">$1,299.99</p>
+            <button class="boton boton--agregar">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img class="producto__imagen" src="recursos/banner.jpg" alt="Producto 2">
+            <h2 class="producto__nombre">Smartphone Pro</h2>
+            <p class="producto__precio">$899.99</p>
+            <button class="boton boton--agregar">Añadir al carrito</button>
+        </div>
+    </section>
+
+    <!-- Carrito flotante -->
+    <div class="carrito">
+        <button class="carrito__cerrar">&times;</button>
+        <h3>Carrito de Compras</h3>
+        <ul class="carrito__lista"></ul>
+        <p class="carrito__total">Total: $0.00</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="recursos/practica3.js"></script>
+</body>
+</html>
